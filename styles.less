@@ -1,4 +1,35 @@
-
+#space-dropdown-menu1 {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.notification-drawer {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  display: none;
+  z-index: 10;
+}
+.search-site-input {
+  position: absolute;
+  top: 0;
+  right: -250px;
+  width: 225px;
+  transition: linear 1s;
+  opacity: .5;
+}
+.search-site-input-show {
+  top: 0;
+  right: 77px;
+  width: 225px;
+  height: 30px;
+  opacity: 1;
+}
+.search-site {
+  &:hover {
+    cursor: pointer;
+  }
+}
 .left-nav {
   height: 100%;
   overflow: hidden;
@@ -54,6 +85,7 @@
               padding: 0 !important;
               &:hover {
                 background-color: initial;
+                cursor: pointer;
               }
             }
             &.border-right {
@@ -122,6 +154,7 @@
           font-size: 15px;
           &:hover {
             background-color: #333333;
+            cursor: pointer;
           }
           .tab-label-1 {
             z-index: 9;
@@ -295,15 +328,31 @@
       .space-dropdown-menu-list {
         a {
           color: #fff;
+          &:hover {
+            background-color: #393f44;
+          }
         }
       }
       .space-dropdown-menu-list:not(:first-child) {
         border-top-color: #ffffff;
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+      .space-dropdown-menu-list {
+        li:hover {
+          background-color: #f1f1f1;
+        }
       }
       &-expanded {
         left: 60px;
         opacity: 1;
         transition: all ease-in 0.3s;
+      }
+      li {
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
     .list-combo {

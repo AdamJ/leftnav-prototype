@@ -12,8 +12,12 @@
     <link href="styles.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
   <body class="left-nav">
+    <div class="notification-drawer">
+      <img src="notification-drawer.png" width="370px">
+    </div>
     <main class="page-wrap">
       <div class="navbar margin-0">
         <div class="navbar-inner">
@@ -24,7 +28,7 @@
               <li class="space-dropdown-menu-item">
                 <a>
                   <div class="user-dropdown__user-icon user-avatar-icon pull-left">
-                    <img class="icon-user" src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg">
+                    <i class="far fa-user-circle fa-lg icon-user"></i>
                   </div>
                   <span class="pull-right fa fa-close hidden-sm hidden-md hidden-lg" id="hideLeftNav"
                     style="margin-right:-10px;"></span>
@@ -38,7 +42,7 @@
               </li>
               <li class="space-dropdown-menu-item">
                 <a>
-                  <p class="dib margin-0">My Dashboard</p>
+                  <p class="dib margin-0" style="font-size: 18px;">My Dashboard</p>
                 </a>
               </li>
               <li class="space-dropdown-menu-item click-inner-menu hidden-sm hidden-md hidden-lg">
@@ -74,8 +78,7 @@
                         <li>
                           <a class="openSpaceList" data-spaceId="1">
                             <div class="user-dropdown__user-icon user-avatar-icon">
-              							  <img class="icon-user"
-              							    src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+              							  <i class="far fa-user-circle fa-lg icon-user"></i>
               							</div>
               							<div class="dib">
               							  <span class="padding-left-10">bobross_925</span>
@@ -93,8 +96,7 @@
                                     <span class="fa fa-angle-left"></span>
                                   </span>
                                   <div class="user-dropdown__user-icon user-avatar-icon">
-                									  <img class="icon-user"
-                									    src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+                									  <i class="far fa-user-circle fa-lg icon-user"></i>
                 									</div>
                 									<div class="dib">
                 									  <span class="padding-left-10">MCeledonia</span>
@@ -115,7 +117,7 @@
                               </li>
                               <li class="space-dropdown-menu-item">
         				                <a>
-        				                  <span class="fa fa-dashboard hidden-sm hidden-md"></span>
+        				                  <span class="fas fa-tachometer-alt hidden-sm hidden-md"></span>
         				                  <p class="dib margin-0">Analyze</p>
         				                </a>
         				                <ul class="space-dropdown-menu-list">
@@ -138,7 +140,6 @@
                               </li>
                               <li class="space-dropdown-menu-item">
         				                <a>
-        				                  <span class="fa fa-table hidden-sm- hidden-md"></span>
         				                  <p class="dib margin-0">Plan</p>
         				                </a>
         				                <ul class="space-dropdown-menu-list">
@@ -161,7 +162,6 @@
                               </li>
                               <li class="space-dropdown-menu-item">
         				                <a>
-        				                  <span class="fa fa-plus-circle hidden-sm hidden-md"></span>
         				                  <p class="dib margin-0">Create</p>
         				                </a>
         				                <ul class="space-dropdown-menu-list">
@@ -193,8 +193,7 @@
                         <li>
                           <a class="openSpaceList" data-spaceId="2">
                             <div class="user-dropdown__user-icon user-avatar-icon">
-              							  <img class="icon-user"
-              							    src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+              							  <i class="far fa-user-circle fa-lg icon-user"></i>
               							</div>
               							<div class="dib">
               							  <span class="padding-left-10">bobross_925</span>
@@ -212,8 +211,7 @@
                                     <span class="fa fa-angle-left"></span>
                                   </span>
                                   <div class="user-dropdown__user-icon user-avatar-icon">
-                									  <img class="icon-user"
-                									    src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+                									  <i class="far fa-user-circle fa-lg icon-user"></i>
                 									</div>
                 									<div class="dib">
                 									  <span class="padding-left-10">MCeledonia</span>
@@ -236,7 +234,7 @@
                                 <a class="openSpaceList" data-spaceId="3">
                                   <p class="dib margin-0">Analyze</p>
                                   <span class="pull-left">
-                                    <span class="fa fa-dashboard"></span>
+                                    <span class="fa fas fa-tachometer-alt"></span>
                                   </span>
                                   <span class="pull-right">
                                     <span class="fa fa-angle-right"></span>
@@ -246,7 +244,6 @@
                                   <ul class="space-dropdown-menu-list margin-bottom-10">
                                     <li>
           						                <a>
-          						                  <span class="fa fa-dashboard hidden-sm hidden-md"></span>
           						                  <p class="dib margin-0">Analyze</p>
           						                </a>
           						                <ul class="space-dropdown-menu-list">
@@ -287,7 +284,6 @@
                                   <ul class="space-dropdown-menu-list margin-bottom-10">
                                     <li>
 						                          <a>
-          						                  <span class="fa fa-table hidden-sm- hidden-md"></span>
           						                  <p class="dib margin-0">Plan</p>
           						                </a>
           						                <ul class="space-dropdown-menu-list">
@@ -328,8 +324,7 @@
                         <li>
                           <a>
                             <div class="user-dropdown__user-icon user-avatar-icon">
-              							  <img class="icon-user"
-              							    src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+              							  <i class="far fa-user-circle fa-lg icon-user"></i>
               							</div>
               							<div class="dib">
               							  <span class="padding-left-10">bobross_925</span>
@@ -342,7 +337,7 @@
                     <li class="space-dropdown-menu-item">
                       <a>
                         <span class="pull-left">
-                          <i class="fa fa-th-large"></i>
+                          <i class="fa fa-th"></i>
                         </span>
                         <p class="dib margin-0">View All Spaces</p>
                       </a>
@@ -353,13 +348,13 @@
               <!-- My workitems -->
               <li class="space-dropdown-menu-item click-inner-menu">
                 <a class="hidden-sm hidden-md hidden-lg" id="clickWorkitem">
-                  <p class="dib margin-0">My Work Items</p>
+                  <p class="dib margin-0" style="font-size: 18px;">My Work Items</p>
                   <span class="pull-right hidden-sm hidden-md hidden-lg">
                     <span class="fa fa-angle-right"></span>
                   </span>
                 </a>
                 <a class="hidden-xs">
-                  <p class="dib margin-0">My Work Items</p>
+                  <p class="dib margin-0" style="font-size: 18px;">My Work Items</p>
                 </a>
                 <div class="inner-menu">
                   <ul class="space-dropdown-menu-list border-0 margin-bottom-10">
@@ -377,8 +372,7 @@
                     <li class="space-dropdown-menu-list-item">
                       <a class="openSpaceList hidden-sm hidden-md hidden-lg" data-spaceId="5">
                       <div class="user-dropdown__user-icon user-avatar-icon">
-          						  <img class="icon-user"
-          						    src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+                        <i class="far fa-user-circle fa-lg icon-user"></i>
           						</div>
           						<div class="dib">
           						  <span class="padding-left-10">bobross_925</span>
@@ -395,7 +389,7 @@
                               <span class="pull-left">
                                 <span class="fa fa-angle-left"></span>
                               </span>
-                              <p class="dib margin-0">My WorkItems</p>
+                              <p class="dib margin-0">My Work Items</p>
                               <span class="pull-right closeMenu" data-closeId="5">
                                 <span class="fa fa-close"></span>
                               </span>
@@ -404,18 +398,39 @@
                           <li class="space-dropdown-menu-item">
                             <ul class="space-dropdown-menu-list margin-top-10 margin-bottom-10 border-0">
                               <li class="list-combo">
-                                <select class="combobox form-control">
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="width: 200px; padding: 8px 0; font-size: 14px;
+                                    background-image: linear-gradient(to bottom,#393f44 0,#393f44 100%); border-color: transparent; background-repeat: repeat;
+                                    color: #fff;">
+                                    Lego activity at Summit <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#" style="color: black;">Lego activity at Summit</a></li>
+                                    <li><a href="#" style="color: black;">Michaels Microservice</a></li>
+                                    <li><a href="#" style="color: black;">osioux_space</a></li>
+                                  </ul>
+                                </div>
+                                <!-- <select class="combobox form-control">
                                   <option>Select a space</option>
-                                  <option value="S1">Space 1</option>
-                                  <option value="s2">Space 2</option>
-                                </select>
+                                  <option value="S1">Lego activity at Summit</option>
+                                  <option value="s2">osioux_space</option>
+                                </select> -->
                               </li>
                               <li class="space-dropdown-menu-list-item">
                                 <a>
                                   <i class="dib fa fa-adjust margin-left-10"></i>
                                   <i class="dib fa fa-bug margin-left-10"></i>
                                   <span class="dib margin-left-10">1</span>
-                                  <p class="margin-0">Hello There! </p>
+                                  <p class="margin-0">Change Hello to Bonjour</p>
+                                </a>
+                              </li>
+                              <li class="space-dropdown-menu-list-item">
+                                <a>
+                                  <i class="dib fa fa-adjust margin-left-10"></i>
+                                  <i class="dib fa fa-bug margin-left-10"></i>
+                                  <span class="dib margin-left-10">4</span>
+                                  <p class="margin-0">Update the prototypes to handle multiple viewports, rather than just desktop size.</p>
                                 </a>
                               </li>
                               <li class="space-dropdown-menu-list-item">
@@ -423,7 +438,7 @@
                                   <i class="dib fa fa-adjust margin-left-10"></i>
                                   <i class="dib fa fa-bug margin-left-10"></i>
                                   <span class="dib margin-left-10">1</span>
-                                  <p class="margin-0">Hello There! </p>
+                                  <p class="margin-0">Change Bonjour to Hola</p>
                                 </a>
                               </li>
                               <li class="space-dropdown-menu-list-item">
@@ -431,23 +446,15 @@
                                   <i class="dib fa fa-adjust margin-left-10"></i>
                                   <i class="dib fa fa-bug margin-left-10"></i>
                                   <span class="dib margin-left-10">1</span>
-                                  <p class="margin-0">Hello There! </p>
+                                  <p class="margin-0">update work items to match guidelines</p>
                                 </a>
                               </li>
                               <li class="space-dropdown-menu-list-item">
                                 <a>
                                   <i class="dib fa fa-adjust margin-left-10"></i>
                                   <i class="dib fa fa-bug margin-left-10"></i>
-                                  <span class="dib margin-left-10">1</span>
-                                  <p class="margin-0">Hello There! </p>
-                                </a>
-                              </li>
-                              <li class="space-dropdown-menu-list-item">
-                                <a>
-                                  <i class="dib fa fa-adjust margin-left-10"></i>
-                                  <i class="dib fa fa-bug margin-left-10"></i>
-                                  <span class="dib margin-left-10">1</span>
-                                  <p class="margin-0">Hello There! </p>
+                                  <span class="dib margin-left-10">3</span>
+                                  <p class="margin-0">finish visual design for navigations</p>
                                 </a>
                               </li>
                             </ul>
@@ -458,8 +465,7 @@
                     <li class="space-dropdown-menu-list-item  hidden-sm hidden-md hidden-lg">
                       <a>
                         <div class="user-dropdown__user-icon user-avatar-icon">
-            						  <img class="icon-user"
-            						    src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+            						  <i class="far fa-user-circle fa-lg icon-user"></i>
             						</div>
             						<div class="dib">
             						  <span class="padding-left-10">bobross_925</span>
@@ -470,8 +476,7 @@
                     <li class="space-dropdown-menu-list-item  hidden-sm hidden-md hidden-lg">
                       <a>
                         <div class="user-dropdown__user-icon user-avatar-icon">
-            						  <img class="icon-user"
-            						    src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+            						  <i class="far fa-user-circle fa-lg icon-user"></i>
             						</div>
             						<div class="dib">
             						  <span class="padding-left-10">MCeledonia</span>
@@ -484,7 +489,7 @@
               </li>
               <li class="space-dropdown-menu-item">
                 <a>
-                  <p class="dib margin-0">My Settings</p>
+                  <p class="dib margin-0" style="font-size: 18px;">My Settings</p>
                   <span class="pull-right">
                     <span class="fa fa-angle-right"></span>
                   </span>
@@ -492,7 +497,7 @@
               </li>
               <li class="space-dropdown-menu-item">
                 <a>
-                  <p class="dib margin-0">Help</p>
+                  <p class="dib margin-0" style="font-size: 18px;"`>Help</p>
                   <span class="pull-right">
                     <span class="fa fa-angle-right"></span>
                   </span>
@@ -500,7 +505,7 @@
               </li>
               <li class="space-dropdown-menu-item">
                 <a>
-                  <p class="dib margin-0">Sign Out</p>
+                  <p class="dib margin-0" style="font-size: 18px;">Sign Out</p>
                   <span class="pull-right">
                     <span class="fa fa-angle-right"></span>
                   </span>
@@ -533,8 +538,7 @@
                       <li class="space-dropdown-menu-list-item" id="selectedSpace">
                         <a>
                           <div class="user-dropdown__user-icon user-avatar-icon">
-              							<img class="icon-user"
-              							  src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+              							<i class="far fa-user-circle fa-lg icon-user"></i>
               						</div>
             							<div class="dib">
             							  <span class="padding-left-10">bobross_925</span>
@@ -545,8 +549,7 @@
                       <li class="space-dropdown-menu-list-item">
                         <a>
               						<div class="user-dropdown__user-icon user-avatar-icon">
-              							<img class="icon-user"
-              							    src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+              							<i class="far fa-user-circle fa-lg icon-user"></i>
               						</div>
             						  <div class="dib">
             						   	<span class="padding-left-10">MCeledonia</span>
@@ -557,8 +560,7 @@
                       <li class="space-dropdown-menu-list-item">
                         <a>
                           <div class="user-dropdown__user-icon user-avatar-icon">
-            							  <img class="icon-user"
-            							    src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+            							  <i class="far fa-user-circle fa-lg icon-user"></i>
             							</div>
             							<div class="dib">
             							  <span class="padding-left-10">crobson</span>
@@ -571,7 +573,7 @@
                   <li class="space-dropdown-menu-item">
                     <a>
                       <span class="pull-left">
-                        <i class="fa fa-th-large"></i>
+                        <i class="fa fa-th"></i>
                       </span>
                       <p class="dib margin-0">View All Spaces</p>
                     </a>
@@ -582,8 +584,7 @@
                 <!-- selected space -->
                 <a class="dropdown-toggle selectedSpaceDropdown" data-toggle="dropdown">
                   <div class="user-dropdown__user-icon user-avatar-icon">
-                    <img class="icon-user"
-                      src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+                    <i class="far fa-user-circle fa-lg icon-user"></i>
                   </div>
                   <div class="dib">
                     <span class="padding-left-10">bobross_925</span>
@@ -594,15 +595,15 @@
             </ul>
             <ul class="nav navbar-nav navbar-right margin-0">
               <li class="border-right">
-                <a>
-                  <i class="fa fa-bell"></i>
+                <a id="notifications" style="color: #303030;">
+                  <i class="fa fa-bell fa-lg"></i>
                 </a>
               </li>
               <li>
-                <input type="search" id="search" placeholder="Search">
-                <a id="btn-search" style="display: inline-block;">
-                  <i class="fa fa-search"></i>
+                <a id="btn-search" class="search-site" style="display: inline-block; color: #303030;">
+                  <i class="fa fa-search fa-lg"></i>
                 </a>
+                <input class="search-site-input" type="text" placeholder="search site..." aria-placeholder="search">
               </li>
             </ul>
           </div>
@@ -612,7 +613,7 @@
         <nav class="sidebar-nav">
           <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked>
           <label for="tab-1" class="tab-label-1">
-            <span class="fa fa-dashboard"></span>
+            <span class="fa fas fa-tachometer-alt"></span>
           </label>
           <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2">
           <label for="tab-2" class="tab-label-2">
@@ -631,8 +632,7 @@
                     <li class="space-dropdown-menu-list-item">
                       <a>
                         <div class="user-dropdown__user-icon user-avatar-icon">
-                          <img class="icon-user"
-                            src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+                          <i class="far fa-user-circle fa-lg icon-user"></i>
                         </div>
                         <div class="dib">
                           <span class="padding-left-10">bobross_925</span>
@@ -644,8 +644,7 @@
                 </li>
                 <li class="space-dropdown-menu-item">
                   <a>
-                    <span class="fa fa-dashboard hidden-sm hidden-md"></span>
-                    <p class="dib margin-0">Analyze</p>
+                    <p class="dib margin-0" style="font-size: 16px;">Analyze</p>
                   </a>
                   <ul class="space-dropdown-menu-list">
                     <li class="tab-menu-list-item">
@@ -675,8 +674,7 @@
                     <li class="space-dropdown-menu-list-item">
                       <a>
                         <div class="user-dropdown__user-icon user-avatar-icon">
-                          <img class="icon-user"
-                            src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+                          <i class="far fa-user-circle fa-lg icon-user"></i>
                         </div>
                         <div class="dib">
                           <span class="padding-left-10">bobross_925</span>
@@ -691,8 +689,7 @@
                 </li>
                 <li class="space-dropdown-menu-item">
                   <a>
-                    <span class="fa fa-table hidden-sm- hidden-md"></span>
-                    <p class="dib margin-0">Plan</p>
+                    <p class="dib margin-0" style="font-size: 16px;">Plan</p>
                   </a>
                   <ul class="space-dropdown-menu-list">
                     <li class="space-dropdown-menu-list-item">
@@ -722,8 +719,7 @@
                     <li class="space-dropdown-menu-list-item">
                       <a>
                         <div class="user-dropdown__user-icon user-avatar-icon">
-                          <img class="icon-user"
-                            src="https://www.gravatar.com/avatar/98669ddf430e4036c17d8fd5acff84f5.jpg" />
+                          <i class="far fa-user-circle fa-lg icon-user"></i>
                         </div>
                         <div class="dib">
                           <span class="padding-left-10">bobross_925</span>
@@ -738,8 +734,7 @@
                 </li>
                 <li class="space-dropdown-menu-item">
                   <a>
-                    <span class="fa fa-plus-circle hidden-sm hidden-md"></span>
-                    <p class="dib margin-0">Create</p>
+                    <p class="dib margin-0" style="font-size: 16px;">Create</p>
                   </a>
                   <ul class="space-dropdown-menu-list">
                     <li>
@@ -849,9 +844,16 @@
           left: '0'
         },10);
       });
-      $('#btn-search').click(function(e) {
-        e.preventDefault();
-        $('#search').animate({width: 'toggle'}).focus();
+      // show notification drawer
+      $("#notifications").click(function () {
+        var effect = 'slide';
+        var options = { direction: 'right' };
+        $(".notification-drawer").toggle(effect, options);
+      });
+      // show site search
+      $(".search-site").click(function(){
+          $(".space-dropdown").toggleClass("search-expanded-space");
+          $(".search-site-input").toggleClass("search-site-input-show");
       });
       function ChangeOpacity(opacity) {
         var opDiv = document.getElementsByClassName("colorDiv")[0];
